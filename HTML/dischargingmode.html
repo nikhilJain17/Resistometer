@@ -1,0 +1,113 @@
+<html>
+
+<head>
+
+
+<link rel="stylesheet" href="file:///Users/nikhil/development/Resistometer/Dependencies/bootstrap-material-design-master/dist/css/bootstrap-material-design.css">
+
+<link rel="stylesheet" href="file:///Users/nikhil/development/Resistometer/Dependencies/bootstrap-material-design-master/dist/css/ripples.css">
+
+
+<link rel="stylesheet" href="file:///Users/nikhil/development/Resistometer/Dependencies/bootstrap-material-design-master/dist/css/bootstrap-material-design.min.css">
+
+
+<!-- import the cheeky bootstrap necessities -->
+<link rel="stylesheet" href="file:///Users/nikhil/development/Resistometer/CSS/sankruth.css">
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+ <!-- Material Design fonts -->
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+
+<!-- making a cheeky navbar -->
+		<nav class="navbar-custom">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" style="color:FFFFFF, font-size:40px" href=#>Resistometer</a> <!-- the header thing of the navbar -->
+				</div>
+			</div>
+			<!-- rest of the tabs -->
+			<ul class="nav navbar-nav" style="background-color:03A9F4, color:FFFFFF">
+				<li><a href="./homepage.html">Home</a></li>
+				<li><a href="./chargingmode.html">Charging Mode</a></li>
+				<li class="active"><a href="./dischargingmode.html">Discharging Mode</a></li>
+				<li><a href="./continuousmode.html">Continuous Mode</a></li>
+			</ul>
+	</nav>
+
+	<br>
+	<br>
+	<br>
+	<br>
+
+	<div id="container" class="row" style="overflow:hidden, width:95%">
+		<!-- enter the resistance -->
+		<div id="crapper"  class="col-md-3">
+			<div id="wrapper" style="text-align: center, padding: 10px 10px 10px 10px">
+				<div class="form-group" style="width:40%">
+					<label for="resistance" style="color:01579B">Resistance:</label>
+					<input type="number" class="form-control" id="resistance">
+				</div>
+			</div>
+		</div>
+		
+
+		<!-- enter the capacitance -->	
+		<div id="crapper" class="col-md-3" >
+			<div id="wrapper" style="text-align: center">
+				<div class="form-group" style="width:40%">
+					<label for="c"  style="color:01579B">Capacitance:</label>
+					<input type="number" class="form-control" id="c">
+				</div>
+			</div>
+		</div>
+				
+
+		<!-- enter the voltage initial -->
+		<div id="crapper" class="col-md-3" >
+			<div id="wrapper" style="text-align: center">
+				<div class="form-group" style="width:40%">
+					<label for="vi" style="color:01579B">Initial Voltage:</label>
+					<input type="number" class="form-control" id="vi">
+				</div>
+			</div>
+		</div>
+		
+
+
+		<!-- enter the voltage final -->
+		<div id="crapper" class="col-md-3" >
+			<div id="wrapper" style="text-align: center, padding: 0px 10px 0px 0px">
+				<div class="form-group" style="width:40%">
+					<label for="vf" style="color:01579B">Final Voltage:</label>
+					<input type="number" class="form-control" id="vf">
+				</div>
+			</div>
+		</div>
+		
+	</div>
+
+
+
+
+
+
+
+
+
+</body>
+
+
+</html>
