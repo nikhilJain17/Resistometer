@@ -10,6 +10,7 @@
 
 <link rel="stylesheet" href="file:///Users/nikhil/development/Resistometer/Dependencies/bootstrap-material-design-master/dist/css/bootstrap-material-design.min.css">
 
+<script src="file:///Users/nikhil/development/Resistometer/Scripts/dischargingmode.js"></script>
 
 <!-- import the cheeky bootstrap necessities -->
 <link rel="stylesheet" href="file:///Users/nikhil/development/Resistometer/CSS/sankruth.css">
@@ -55,10 +56,10 @@
 	<div id="container" class="row" style="overflow:hidden, width:95%">
 		<!-- enter the resistance -->
 		<div id="crapper"  class="col-md-3">
-			<div id="wrapper" style="text-align: center, padding: 10px 10px 10px 10px">
+			<div id="wrapper" style="text-align: center">
 				<div class="form-group" style="width:40%">
-					<label for="resistance" style="color:01579B">Resistance:</label>
-					<input type="number" class="form-control" id="resistance">
+					<label for="resistance" style="color:01579B; padding-left:10px">Resistance:</label>
+					<input type="number" class="form-control" style="padding-left:10px" id="r">
 				</div>
 			</div>
 		</div>
@@ -89,7 +90,7 @@
 
 		<!-- enter the voltage final -->
 		<div id="crapper" class="col-md-3" >
-			<div id="wrapper" style="text-align: center, padding: 0px 10px 0px 0px">
+			<div id="wrapper" style="text-align: center; padding: 0px 10px 0px 0px">
 				<div class="form-group" style="width:40%">
 					<label for="vf" style="color:01579B">Final Voltage:</label>
 					<input type="number" class="form-control" id="vf">
@@ -100,6 +101,9 @@
 	</div>
 
 
+	<div class="span6" style="align-items:center">
+		<button id="graphBtn" onClick="dischargeBtnClick()">Graph</button>
+	</div>
 
 
 
