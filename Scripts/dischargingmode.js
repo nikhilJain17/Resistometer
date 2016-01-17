@@ -16,3 +16,6 @@ function dischargeBtnClick() {
 	console.log('\nVI: ' + vi + "\nVF: " + vf + '\nR: ' + r + '\nC: ' + c);
 
 }
+
+// set on change for slider
+
