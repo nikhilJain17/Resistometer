@@ -1,18 +1,31 @@
 <html>
+
 <head>
-	<title>Charging Mode</title>
+
+
+<link rel="stylesheet" href="file:///Users/nikhil/development/Resistometer/Dependencies/bootstrap-material-design-master/dist/css/bootstrap-material-design.css">
+
+<link rel="stylesheet" href="file:///Users/nikhil/development/Resistometer/Dependencies/bootstrap-material-design-master/dist/css/ripples.css">
+
+
+<link rel="stylesheet" href="file:///Users/nikhil/development/Resistometer/Dependencies/bootstrap-material-design-master/dist/css/bootstrap-material-design.min.css">
+
+<script src="file:///Users/nikhil/development/Resistometer/Scripts/dischargingmode.js"></script>
 
 <!-- import the cheeky bootstrap necessities -->
+<link rel="stylesheet" href="file:///Users/nikhil/development/Resistometer/CSS/sankruth.css">
+
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
 <!-- jQuery library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="file:///Users/nikhil/development/Resistometer/Scripts/dischargingmode.js"></script>
 
-<!-- Latest compiled JavaScript -->
-<!-- <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> -->
-<!-- 
-<link rel="stylesheet" href="file:///Users/nikhil/development/Resistometer/Dependencies/bootstrap-material-design-master/dist/css/bootstrap-material-design.css"> -->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+ <!-- Material Design fonts -->
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 
 </head>
 
@@ -20,30 +33,33 @@
 
 
 <!-- making a cheeky navbar -->
-		<nav class="navbar navbar-inverse">
+		<nav class="navbar-custom">
 			<div class="container-fluid">
 				<div class="navbar-header">
-					<a class="navbar-brand" href=#>Resistometer</a> <!-- the header thing of the navbar -->
+					<a class="navbar-brand" style="color:FFFFFF, font-size:40px" href=#>Resistometer</a> <!-- the header thing of the navbar -->
 				</div>
 			</div>
 			<!-- rest of the tabs -->
-			<ul class="nav navbar-nav">
+			<ul class="nav navbar-nav" style="background-color:03A9F4, color:FFFFFF">
 				<li><a href="./homepage.html">Home</a></li>
-				<li class="active"><a href="./chargingmode.html">Charging Mode</a></li>
-				<li><a href="./dischargingmode.html">Discharging Mode</a></li>
+				<li><a href="./chargingmode.html">Charging Mode</a></li>
+				<li class="active"><a href="./dischargingmode.html">Discharging Mode</a></li>
 				<li><a href="./continuousmode.html">Continuous Mode</a></li>
 			</ul>
 	</nav>
 
-<!-- ADD SLIDERS! -->
+	<br>
+	<br>
+	<br>
+	<br>
 
 	<div id="container" class="row" style="overflow:hidden, width:95%">
 		<!-- enter the resistance -->
 		<div id="crapper"  class="col-md-3">
-			<div id="wrapper" style="text-align: center, padding: 0px 0px 0px 10px">
+			<div id="wrapper" style="text-align: center">
 				<div class="form-group" style="width:40%">
-					<label for="resistance">Resistance:</label>
-					<input type="number" class="form-control" id="resistance">
+					<label for="resistance" style="color:01579B; padding-left:10px">Resistance:</label>
+					<input type="number" class="form-control" style="padding-left:10px" id="r">
 				</div>
 			</div>
 		</div>
@@ -53,7 +69,7 @@
 		<div id="crapper" class="col-md-3" >
 			<div id="wrapper" style="text-align: center">
 				<div class="form-group" style="width:40%">
-					<label for="c">Capacitance:</label>
+					<label for="c"  style="color:01579B">Capacitance:</label>
 					<input type="number" class="form-control" id="c">
 				</div>
 			</div>
@@ -64,9 +80,9 @@
 		<div id="crapper" class="col-md-3" >
 			<div id="wrapper" style="text-align: center">
 				<div class="form-group" style="width:40%">
-					<label for="vi">Initial Voltage:</label>
+					<label for="vi" style="color:01579B">Initial Voltage:</label>
 					<input type="number" class="form-control" id="vi">
-				</div>
+				</div> 
 			</div>
 		</div>
 		
@@ -74,9 +90,9 @@
 
 		<!-- enter the voltage final -->
 		<div id="crapper" class="col-md-3" >
-			<div id="wrapper" style="text-align: center, padding: 0px 10px 0px 0px">
+			<div id="wrapper" style="text-align: center; padding: 0px 10px 0px 0px">
 				<div class="form-group" style="width:40%">
-					<label for="vf">Final Voltage:</label>
+					<label for="vf" style="color:01579B">Final Voltage:</label>
 					<input type="number" class="form-control" id="vf">
 				</div>
 			</div>
@@ -85,6 +101,21 @@
 	</div>
 
 
+	<div class="span6" style="align-items:center; width:40%">
+		<input type="range" min="1" max="10" step="1" data-show-value="true" data-highlight="true" data-popup-enabled="true">Tau</input>
+		<br>
+		<br>
+		<br>
+		<button id="graphBtn" onClick="dischargeBtnClick()">Graph</button>
+	</div>
+
+
+
+
+
+
+
 </body>
+
 
 </html>

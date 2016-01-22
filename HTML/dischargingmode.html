@@ -10,8 +10,6 @@
 
 <link rel="stylesheet" href="file:///Users/nikhil/development/Resistometer/Dependencies/bootstrap-material-design-master/dist/css/bootstrap-material-design.min.css">
 
-<script src="file:///Users/nikhil/development/Resistometer/Scripts/dischargingmode.js"></script>
-
 <!-- import the cheeky bootstrap necessities -->
 <link rel="stylesheet" href="file:///Users/nikhil/development/Resistometer/CSS/sankruth.css">
 
@@ -82,13 +80,13 @@
 				<div class="form-group" style="width:40%">
 					<label for="vi" style="color:01579B">Initial Voltage:</label>
 					<input type="number" class="form-control" id="vi">
-				</div>
+				</div> 
 			</div>
 		</div>
 		
 
-
-		<!-- enter the voltage final -->
+<!-- 
+		 enter the voltage final 
 		<div id="crapper" class="col-md-3" >
 			<div id="wrapper" style="text-align: center; padding: 0px 10px 0px 0px">
 				<div class="form-group" style="width:40%">
@@ -96,7 +94,8 @@
 					<input type="number" class="form-control" id="vf">
 				</div>
 			</div>
-		</div>
+		</div> 
+-->
 		
 	</div>
 
@@ -106,10 +105,13 @@
 		<br>
 		<br>
 		<br>
-		<button id="graphBtn" onClick="dischargeBtnClick()">Graph</button>
+		<button id="graphBtn" class="button" onClick="dischargeBtnClick()">Graph</button>
 	</div>
 
+	<!-- chart -->
+	<canvas id="myChart" width="400" height="400"></canvas>
 
+	<script src="file:///Users/nikhil/development/Resistometer/Scripts/dischargingmode.js"></script>
 
 
 
